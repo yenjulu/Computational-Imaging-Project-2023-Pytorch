@@ -1,0 +1,117 @@
+
+config path: configs/fastmri_modl.yaml
+workspace: ./workspace/fastmri_modl,k=1,n=9
+description: "fastmri config, sigma:0.01"
+
+
+train start: 2024-02-16 21:17:50
+-----------------------
+epoch 0/50 train score: 31.1182	loss: 0.0005
+epoch 0/50 val score: 32.1764	loss: 0.0004
+epoch 1/50 train score: 31.1680	loss: 0.0005
+epoch 1/50 val score: 31.7275	loss: 0.0005
+epoch 2/50 train score: 31.1559	loss: 0.0005
+epoch 2/50 val score: 31.5288	loss: 0.0005
+epoch 3/50 train score: 31.1875	loss: 0.0005
+epoch 3/50 val score: 32.0587	loss: 0.0004
+epoch 4/50 train score: 31.2547	loss: 0.0005
+epoch 4/50 val score: 31.6020	loss: 0.0005
+epoch 5/50 train score: 31.2198	loss: 0.0005
+epoch 5/50 val score: 31.9966	loss: 0.0004
+epoch 6/50 train score: 31.2662	loss: 0.0005
+epoch 6/50 val score: 30.4241	loss: 0.0006
+epoch 7/50 train score: 31.3038	loss: 0.0005
+epoch 7/50 val score: 32.0620	loss: 0.0005
+epoch 8/50 train score: 31.3256	loss: 0.0005
+epoch 8/50 val score: 27.4509	loss: 0.0011
+epoch 9/50 train score: 31.3045	loss: 0.0005
+epoch 9/50 val score: 31.9730	loss: 0.0004
+epoch 10/50 train score: 31.5814	loss: 0.0005
+epoch 10/50 val score: 32.3056	loss: 0.0004
+epoch 11/50 train score: 31.5835	loss: 0.0005
+epoch 11/50 val score: 32.3537	loss: 0.0004
+epoch 12/50 train score: 31.6189	loss: 0.0005
+epoch 12/50 val score: 32.3649	loss: 0.0004
+epoch 13/50 train score: 31.6048	loss: 0.0005
+epoch 13/50 val score: 32.4209	loss: 0.0004
+epoch 14/50 train score: 31.6265	loss: 0.0005
+epoch 14/50 val score: 32.3843	loss: 0.0004
+epoch 15/50 train score: 31.5933	loss: 0.0005
+epoch 15/50 val score: 32.4237	loss: 0.0004
+epoch 16/50 train score: 31.6365	loss: 0.0005
+epoch 16/50 val score: 32.5019	loss: 0.0004
+epoch 17/50 train score: 31.6244	loss: 0.0005
+epoch 17/50 val score: 32.5437	loss: 0.0004
+epoch 18/50 train score: 31.6425	loss: 0.0005
+epoch 18/50 val score: 32.3738	loss: 0.0004
+epoch 19/50 train score: 31.6458	loss: 0.0005
+epoch 19/50 val score: 32.3903	loss: 0.0004
+epoch 20/50 train score: 31.6542	loss: 0.0005
+epoch 20/50 val score: 32.4394	loss: 0.0004
+epoch 21/50 train score: 31.6952	loss: 0.0005
+epoch 21/50 val score: 32.4929	loss: 0.0004
+epoch 22/50 train score: 31.6708	loss: 0.0005
+epoch 22/50 val score: 32.3276	loss: 0.0004
+epoch 23/50 train score: 31.6761	loss: 0.0005
+epoch 23/50 val score: 32.4329	loss: 0.0004
+epoch 24/50 train score: 31.6797	loss: 0.0005
+epoch 24/50 val score: 32.4418	loss: 0.0004
+epoch 25/50 train score: 31.6599	loss: 0.0005
+epoch 25/50 val score: 32.3264	loss: 0.0004
+epoch 26/50 train score: 31.7045	loss: 0.0005
+epoch 26/50 val score: 32.2910	loss: 0.0004
+epoch 27/50 train score: 31.6903	loss: 0.0005
+epoch 27/50 val score: 32.4794	loss: 0.0004
+epoch 28/50 train score: 31.6750	loss: 0.0005
+epoch 28/50 val score: 32.4313	loss: 0.0004
+epoch 29/50 train score: 31.6996	loss: 0.0005
+epoch 29/50 val score: 32.3969	loss: 0.0004
+epoch 30/50 train score: 31.7100	loss: 0.0005
+epoch 30/50 val score: 32.4234	loss: 0.0004
+epoch 31/50 train score: 31.6893	loss: 0.0005
+epoch 31/50 val score: 32.4598	loss: 0.0004
+epoch 32/50 train score: 31.6727	loss: 0.0005
+epoch 32/50 val score: 32.4226	loss: 0.0004
+epoch 33/50 train score: 31.6682	loss: 0.0005
+epoch 33/50 val score: 32.4886	loss: 0.0004
+epoch 34/50 train score: 31.6800	loss: 0.0005
+epoch 34/50 val score: 32.4145	loss: 0.0004
+epoch 35/50 train score: 31.6823	loss: 0.0005
+epoch 35/50 val score: 32.4529	loss: 0.0004
+epoch 36/50 train score: 31.6565	loss: 0.0005
+epoch 36/50 val score: 32.4689	loss: 0.0004
+epoch 37/50 train score: 31.6887	loss: 0.0005
+epoch 37/50 val score: 32.4385	loss: 0.0004
+epoch 38/50 train score: 31.6702	loss: 0.0005
+epoch 38/50 val score: 32.4022	loss: 0.0004
+epoch 39/50 train score: 31.6752	loss: 0.0005
+epoch 39/50 val score: 32.4193	loss: 0.0004
+-----------------------
+total train time: 283.02 min
+best score: 32.5437
+
+
+test start: 2024-02-17 10:54:14
+test PSNR score: 24.6062
+test SSIM score: 0.7971
+-----------------------
+total test time: 2.93 min
+config path: configs/fastmri_modl.yaml
+workspace: ./workspace/fastmri_modl,k=1,n=9
+description: "fastmri config, sigma:0.01, batch_size: 1"
+
+
+train start: 2024-03-07 20:44:14
+-----------------------
+config path: configs/fastmri_modl.yaml
+workspace: ./workspace/fastmri_modl,k=1,n=9
+description: "fastmri config, sigma:0.01, batch_size: 1"
+
+
+train start: 2024-03-07 21:03:24
+-----------------------
+epoch 40/41 train score: 29.2133	loss: 0.0009
+epoch 40/41 val score: 31.2063	loss: 0.0005
+-----------------------
+total train time: 16.04 min
+best score: 32.5437

@@ -1,0 +1,38 @@
+config_name: fastmri_ssdu,k=6,n=3,varnet
+
+description: "\"fastmri config, sigma:0.01\""
+
+k_iters: 6
+n_layers: 3
+
+epochs: 50
+
+dataset_name: ssdu_fastmri_dataset
+
+dataset_params:
+
+  dataset_path: 'data/fastmri_dataset_ssdu.hdf5'
+  # dataset_path: 'data/fastmri_tst_dataset_ssdu.hdf5'
+  mask_path: 'data/trn_loss_mask_ssdu_2.hdf5'
+
+val_data: true
+
+batch_size: 1
+
+model_name: base_varnet_ssdu
+
+restore_weights: False   #False, best, inter, final
+
+restore_path: 'workspace/fastmri_ssdu,k=6,n=12,modl/checkpoints/'
+
+loss_name: MSE
+score_names: ['PSNR', 'SSIM']
+optim_name: Adam
+optim_params:
+  lr: 0.001
+gradient_clip: true
+
+# scheduler_name: StepLR
+# scheduler_params:
+#   step_size: 1
+#   gamma: 0.8

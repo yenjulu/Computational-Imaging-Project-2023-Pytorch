@@ -1,0 +1,31 @@
+config_name: fastmri_trans_varnet,k=1,n=5
+description: "\"fastmri config,sigma:0.01\""
+
+n_layers: 5
+k_iters: 1
+epochs: 50
+
+dataset_name: modl_fastmri_dataset
+dataset_params:
+  dataset_path: 'data/fastmri_dataset.hdf5'
+  sigma: 0.01
+val_data: true
+
+batch_size: 4
+
+model_name: transformer_varnet
+
+restore_weights: false  #False, best, inter, final
+restore_path: 'workspace/fastmri_trans_varnet,k=1,n=5/checkpoints/'
+
+loss_name: MSE
+score_names: ['PSNR', 'SSIM']
+optim_name: Adam
+optim_params:
+  lr: 0.001
+gradient_clip: true
+
+# scheduler_name: StepLR
+# scheduler_params:
+#   step_size: 10
+#   gamma: 0.1

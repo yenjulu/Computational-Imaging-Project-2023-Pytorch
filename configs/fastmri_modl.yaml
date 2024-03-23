@@ -1,0 +1,39 @@
+config_name: fastmri_modl,k=1,n=9
+description: "\"fastmri config, sigma:0.01, batch_size: 1\""
+
+k_iters: 1
+n_layers: 9
+
+epochs: 41
+
+dataset_name: modl_fastmri_dataset
+# dataset_name: modl_fastmri_datasetx4
+
+dataset_params:
+
+  # dataset_path: 'data/fastmri_tst_dataset.hdf5'
+  dataset_path: 'data/fastmri_dataset.hdf5'
+  # dataset_path: '/home/vault/rzku/mlvl125h/fastmri_dataset_FLAIR.hdf5'
+  # dataset_path: 'data/fastmri_dataset_T1.hdf5'
+  sigma: 0.01
+val_data: true
+
+batch_size: 1
+
+model_name: base_modl
+# model_name: base_modl_gd
+
+restore_weights: inter   #False, best, inter, final
+restore_path: 'workspace/fastmri_modl,k=1,n=9/checkpoints/'
+
+loss_name: MSE
+score_names: ['PSNR', 'SSIM']
+optim_name: Adam
+optim_params:
+  lr: 0.001
+gradient_clip: true
+
+# scheduler_name: StepLR
+# scheduler_params:
+#   step_size: 10
+#   gamma: 0.1

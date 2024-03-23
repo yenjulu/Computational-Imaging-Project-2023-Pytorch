@@ -1,0 +1,30 @@
+config_name: base_varnet,k=9,n=5
+description: "\"base config, k=9,n=5,sigma:0.02\""
+
+k_iters: 9
+n_layers: 5
+
+epochs: 50
+
+dataset_name: modl_dataset
+dataset_params:
+  dataset_path: 'data/dataset.hdf5'
+  sigma: 0.02
+val_data: true
+batch_size: 1
+
+model_name: base_varnet
+
+restore_weights: false #False, best, inter, final
+restore_path: 'workspace/base_varnet,k=12,n=2/checkpoints/'
+
+loss_name: MSE
+score_names: ['PSNR', 'SSIM']
+optim_name: Adam
+optim_params:
+  lr: 0.001
+gradient_clip: true
+# scheduler_name: StepLR
+# scheduler_params:
+#   step_size: 10
+#   gamma: 0.1
