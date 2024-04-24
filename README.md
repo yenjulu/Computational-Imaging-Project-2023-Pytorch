@@ -56,11 +56,9 @@ You can change the configuration file for testing by modifying the `test.sh` fil
 scripts/test.sh
 ```
 
-## Saved models
+## Best configuration of model
 
-Saved models are provided.
-
-K=1, N=9: `workspace/fastmri_modl,k=1,n=9/checkpoints/best.epoch0017-score32.5437.pth` 
+K=1, N=9: `workspace/fastmri_modl,k=1,n=9/log.txt` 
 
 # Varnet
 
@@ -76,11 +74,9 @@ Learning a Variational Network for Reconstruction of Accelerated MRI Data by Ker
 
 The same path as described in MoDL
 
-## Saved models
+## Best configuration of model
 
-Saved models are provided.
-
-K=6, N=3: `workspace/fastmri_varnet,k=6,n=3/checkpoints/best.epoch0043-score38.0277.pth`
+K=6, N=3: `workspace/fastmri_varnet,k=6,n=3/log.txt`
 
 # SSDU
 
@@ -97,11 +93,9 @@ Self-supervised learning of physics-guided reconstruction neural networks withou
 
 The same path as described in MoDL
 
-## Saved models
+## Best configuration of model
 
-Saved models are provided.
-
-K=6, N=3: `workspace/fastmri_ssdu,k=6,n=3/checkpoints/best.epoch0043-score38.0277.pth`
+K=5, N=6: `workspace/fastmri_ssdu,k=5,n=6,modl,resnet,ispace/log.txt`
 
 # Transformer
 
